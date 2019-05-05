@@ -1,0 +1,75 @@
+.header {
+  max-width: $max-width;
+  margin: 4rem auto 0;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+
+  &__title,
+  &__subtitle {
+    text-shadow: $shadow-dark;
+  }
+
+  &__title {
+    font-size: 10rem;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 35%;
+      background-color: #209cff;
+      z-index: -1;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    font-size: 3rem;
+    line-height: 1.3;
+    font-weight: 400;
+    padding-bottom: 4rem;
+    opacity: 0.9;
+  }
+}
+
+.icon-cloud {
+  position: absolute;
+  fill: #fff;
+  bottom: 0;
+  width: 15rem;
+
+  &--first {
+    left: -25rem;
+    animation: cloud 5s ease-in-out infinite;
+  }
+
+  &--second {
+    right: -25rem;
+    animation: cloud 5s 1s ease-in-out infinite;
+    opacity: 0.8;
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,30 @@
+.footer {
+  &__curio {
+    background-color: #fff;
+    padding: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      max-width: 54rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__bottom {
+    background-color: #333;
+    color: #b1b1b1;
+    font-size: 1.3rem;
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="theme-color" content="#209cff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <title>DirtyAir - Find the most polluted cities with particulates (PM2.5).</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <h1 class="header__title">
+            <svg class="icon-cloud icon-cloud--first">
+                <use xlink:href="./assets/img/sprite.svg#icon-cloud"></use>
+            </svg>
+            <svg class="icon-cloud icon-cloud--second">
+                <use xlink:href="./assets/img/sprite.svg#icon-cloud"></use>
+            </svg>
+            Dirty<span class="header__title--bold">Air!</span>
+        </h1>
+        <h2 class="header__subtitle">Find the most <strong>polluted cities</strong><br />with
+            <strong>particulates</strong> (PM<sub>2.5</sub>).</h2>
+    </header>
+    <div class="container">
+        <form class="search">
+            <label for="country">Enter country:</label>
+            <input type="text" name="country" class="search__input" list="countries" placeholder="e.g. Poland" value=""
+                autocomplete="off">
+            <datalist id="countries">
+            </datalist>
+            <button type="submit" class="search__button">
+                <svg class="icon-search">
+                    <use xlink:href="./assets/img/sprite.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+        <section class="cities">
+            <div class="cities__wrapper is-hidden">
+                <h3 class="cities__title">List of <strong>the most polluted cities in <span
+                            class="cities__title__country"></span></strong> according to measurements <strong>from
+                        previous 24 hours:</strong>
+                </h3>
+                <div class="list">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__curio">
+                <h3 class="footer__curio__title">Do you know...</h3>
+                <p class="footer__curio__text">
+                    The World Health Organization warns that PM<sub>2.5</sub> is <strong>the most harmful to human
+                        health</strong> from other atmospheric pollutants.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Particulates" class="btn" target="_blank"
+                    rel="noopener noreferrer">Read more!</a>
+            </div>
+            <div class="footer__bottom">
+                <span>Data provided by <a href="https://openaq.org/" target="_blank"
+                        rel="noopener noreferrer">OpenAQ</a> and <a href="https://wikipedia.org/" target="_blank"
+                        rel="noopener noreferrer">Wikipedia</a>.</span>
+                <a href="#" class="to-top">Back to top</a>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
