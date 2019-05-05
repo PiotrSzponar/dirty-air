@@ -26,5 +26,19 @@
     padding: 3rem 4rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    @media only screen and (min-width: $bp-small) {
+      flex-direction: row;
+    }
+  }
+
+  & .to-top {
+    margin-top: 1rem;
+
+    @media only screen and (min-width: $bp-small) {
+      margin-top: 0;
+    }
   }
 }
